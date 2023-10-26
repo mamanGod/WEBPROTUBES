@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="profile.css">
+    <title>Profil Saya</title>
+</head>
+<body style="background-color: #C394E8;">
+    <span id="open-sidebar" style="font-size: 30px; cursor: pointer;">&#9776;</span>
+    <a href="./Dashboard.html" id="home-link" style="position: absolute; top: 20px; right: 20px; font-size: 30px;">
+        &#127968;
+    </a>
+    <div id="mySidebar" class="sidebar" style="background-color: #a00066;">
+        <div class="sidebar-content">
+            <img src="https://slabsoft.com/wp-content/uploads/2022/05/pp-wa-kosong-default.jpg" alt="Profil Saya" class="rounded-circle img-fluid" id="profile-image">
+            <p id="username">Username</p>
+            <p id="phone">No HP</p>
+            <p id="status">Status</p>
+            <p id="age">Umur</p>
+            <p id="note">Catatan</p>
+        </div>
+    </div>
+    <div class="container container-shifted" style="margin-top: 100px;">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="background-color: #a00066;">
+                    <div class="card-body text-center">
+                        <img src="https://slabsoft.com/wp-content/uploads/2022/05/pp-wa-kosong-default.jpg" alt="Profil Saya" class="rounded-circle img-fluid" style="width: 200px; height: 200px;" >
+                        <button type="button" class="btn btn-primary mt-5" id="upload-image">Upload Gambar</button>
+                        <button type="button" class="btn btn-danger mt-5" id="delete-image">Hapus Gambar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        Edit Profile
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" id="username" placeholder="Username">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">No HP</label>
+                                <input type="text" class="form-control" id="phone" placeholder="No HP">
+                            </div>
+                            <div class="form-group">
+                                <label for="status">Status</label>
+                                <input type="text" class="form-control" id="status" placeholder="Status">
+                            </div>
+                            <div class="form-group">
+                                <label for="age">Umur</label>
+                                <input type="date" class="form-control" id="age" placeholder="Umur">
+                            </div>
+                            <div class="form-group">
+                                <label for="note">Note</label>
+                                <input type="text" class="form-control" id="note" placeholder="Note">
+                            </div>
+                            <button type="submit" class="btn btn-primary float-right">Simpan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="profile.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
