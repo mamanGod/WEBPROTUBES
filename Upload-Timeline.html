@@ -37,25 +37,30 @@
     </div>
 
     <!--Konten-->
-    <div class="Container">
-        <div class="container text-center">
-                <div class="row items-center">
-                    <div class="col-2" style="background-color: aqua;">
-                        <img src="./Image/BigMan.jpg" alt="BigMan" class="rounded-circle"
-                            style="width: 100%; position: relative;">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-2">
+                <img src="./Image/BigMan.jpg" alt="BigMan" class="rounded-circle"
+                    style="width: 100%; position: relative;">
+            </div>
+            <div class="col-2">
+                <label for="Name" class="float-start"
+                    style="font-size: large; font-weight: bold; position: relative;">BigMan</label><br>
+                <label for="file" style="cursor: pointer;">
+                    <div class="card" style="background-color: #C394E8; border: 2px dashed #000; width: 1000px; height: 100px;">
+                        <div class="card-body">
+                            <center>
+                                <img src="./Image/Timeline/UploadIcon-removebg-preview.png" alt="Upload Gambar" style="width: 50px; height: 50px;"><br>
+                                <p>Upload Gambar</p>
+                                <input type="file" id="file" style="display: none;">
+                            </center>
+                        </div>
                     </div>
-                    <div class="col" style="background-color: aqua;">
-                        <label for="Name" class="float-start"
-                            style="background-color: white; position: relative;">BigMan</label>
-                        <p class="float-end text-start" style="background-color: aqua; position: relative;">
-                            jadi inget pas dulu, badan masih bagus muka
-                            masih cantik. banyak boti deket, lah sekarang
-                            badan udah ga keurus gini. semoga tetep sehat
-                            terus deh nih badan. xixixixi. #ayotetepsehat#kitaharuspanjangumur#pilpres2024
-                            #allinprabowo
-                        </p>
-                    </div>
-                </div>    
+                </label>
+                <div class="form-group mt-3">
+                    <textarea class="form-control" rows="4" style="background-color: aqua; width: 1000px; height: 250px;" placeholder="Send Message..."></textarea>
+                </div>
+            </div>
         </div>
     </div>
 </body>
@@ -63,7 +68,7 @@
 <footer>
     <!--UPLOAD BUTTON-->
     <div class="position-relative">
-        <a href="./Upload-Timeline.html"><img src="./Image/Timeline/UploadIcon-removebg-preview.png" alt="Upload" class="rounded-circle position-fixed bottom-0 end-0"></a>
+        <a href="./Timeline.html"><img src="./Image/Timeline/upload.png" alt="Upload" class="rounded-circle position-fixed bottom-0 end-0" style="width: 100px; height: 100px;"></a>
     </div>
 
 </footer>
