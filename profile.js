@@ -1,3 +1,4 @@
+/*
 // Membuat referensi ke elemen tombol "Upload Gambar" dan "Hapus Gambar"
 var uploadButton = document.getElementById("upload-image");
 var deleteButton = document.getElementById("delete-image");
@@ -47,4 +48,4 @@ openSidebarButton.addEventListener("click", function () {
         openSidebarButton.style.marginLeft = "10px";
         sidebarOpen = false;
     }
-});
+});*/
