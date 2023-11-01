@@ -2,6 +2,7 @@ let username = document.getElementById("Uname-id");
 let password = document.getElementById("P-id");
 var formlogn = document.getElementById("formLogin-id");
 var statusLogin = localStorage.getItem("statusLogin");
+var statusAdmin = localStorage.getItem("statusAdmin");
 
 function login(){
     if(username.value == "" || password.value == ""){
@@ -9,10 +10,16 @@ function login(){
     }else if(username.value == "Iqnaz" && password.value == "aa"){
         formlogn.action = "Dashboard_Login.html";
         localStorage.setItem("statusLogin", "true");
+        localStorage.setItem("statusAdmin", "false");
+    }else if(username.value == "AlifAdmin" && password.value == "alif123"){
+        window.alert("Anda Login Sebagai Admin")
+        formlogn.action = "Dashboard.html";
+        localStorage.setItem("statusLogin", "true");
+        localStorage.setItem("statusAdmin", "true");
     }else{
-        statusLogin = false;
         formlogn.action = "Dashboard.html";
         localStorage.setItem("statusLogin", "false");
+        localStorage.setItem("statusAdmin", "false");
     }
 }
 
@@ -25,3 +32,10 @@ function cekLogin(){
     }
 }
 
+function cekAdmin(){
+    var DropdownMenu = document.getElementById("dropdown");
+    if(statusAdmin == "false"){
+        DropdownMenu.style.display = 'none';
+        return false;
+    }
+}
