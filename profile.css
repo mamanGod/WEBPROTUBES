@@ -1,17 +1,6 @@
 /* style.css */
 @import "node_modules/bootstrap/scss/forms";
 
-#mySidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #333;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
 
 .sidebar-content {
     text-align: center;

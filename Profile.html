@@ -7,18 +7,24 @@
     <title>Profil Saya</title>
 </head>
 <body style="background-color: #C394E8;">
-    <span id="open-sidebar" style="font-size: 30px; cursor: pointer;">&#9776;</span>
+    <span role="button" id="open-sidebar" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#mySidebar" aria-controls="mySidebar" style="font-size: 30px; cursor: pointer;">&#9776;</span>
     <a href="./Dashboard.html" id="home-link" style="position: absolute; top: 20px; right: 20px; font-size: 30px;">
         &#127968;
     </a>
-    <div id="mySidebar" class="sidebar" style="background-color: #a00066;">
-        <div class="sidebar-content">
-            <img src="./Image/BigMan.jpg" alt="Profil Saya" class="rounded-circle img-fluid" id="profile-image">
-            <p id="username">Username</p>
-            <p id="phone">No HP</p>
-            <p id="status">Status</p>
-            <p id="age">Umur</p>
-            <p id="note">Catatan</p>
+    <div id="mySidebar" class="offcanvas offcanvas-start" tabindex="-1" style="background-color: #a00066;">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title">Profile</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>   
+        <div class="offcanvas-body">
+            <div>
+                <img src="./Image/BigMan.jpg" alt="Profil Saya" class="rounded-circle img-fluid" id="profile-image">
+                <p id="username">Username</p>
+                <p id="phone">No HP</p>
+                <p id="status">Status</p>
+                <p id="age">Umur</p>
+                <p id="note">Note</p>
+            </div>
         </div>
     </div>
     <div class="container container-shifted" style="margin-top: 100px;">
