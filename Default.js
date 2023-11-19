@@ -31,9 +31,10 @@ function cekLogin(){
     var signOutBar = document.getElementById("SignOutBar");
     var profBar = document.getElementById("ProfBar");
     if(statusLogin == "false"){
-        window.alert("Harap Login untuk menggunakan fitur ini");
+        //window.alert("Harap Login untuk menggunakan fitur ini");
         porfileBar.style.display = 'none';
         signOutBar.style.display = 'none';
+        profBar.style.display = 'none';
         return false;
     }else{
         profBar.style.display = 'none';
@@ -49,9 +50,22 @@ function cekAdmin(){
         DropdownMenu.style.display = 'none';
         return false;
     }
+    var porfileBar = document.getElementById("ProfileBar");
+    porfileBar.innerHTML = '<a href="/Profile.html" class="form-text" style="color: white;">Admin</a>';
 }
 
 function LogOut(){
     localStorage.setItem("statusLogin", "false");
     localStorage.setItem("statusAdmin", "false");
+}
+
+
+function AlertLogin(){
+    if(statusLogin == "false"){
+        window.alert("Harap Login untuk menggunakan fitur ini");
+        return false;
+    }else{
+        location.href = "/Create-Artikel.html";
+        return true;
+    }
 }
